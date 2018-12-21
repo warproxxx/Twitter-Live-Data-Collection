@@ -30,3 +30,6 @@ Profile data will be stored in "data/profile"
 `python3 run_live.py`
 
 After wards you can clean the data and convert them into a single file using notebooks in "Data Cleaning" folder
+
+4) If you wish to update the number of likes and retweets later you can use this repository:
+https://github.com/warproxxx/Tweet-Details-Scraper
