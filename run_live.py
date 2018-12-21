@@ -9,11 +9,10 @@ from dateutil.relativedelta import relativedelta
 import pandas as pd
 import numpy as np
 
-from libs.reading_utils import get_keywords, get_proxies, get_custom_keywords
+from libs.reading_utils import get_keywords
 from libs.writing_utils import get_logger, get_locations
-from processor import historicProcessor, profileProcessor, liveProcessor
+from processor import profileProcessor, liveProcessor
 
-from twitterscraper import query_historic_tweets
 from livescraper import query_live_tweets
 
 
@@ -44,7 +43,7 @@ def download_live(keywords, logger):
     
 
 class runAll:
-    def __init__(self, keywords, historicList, proxies, relative_dir=""):
+    def __init__(self, keywords, historicList, relative_dir=""):
         '''
         Runs everything for twitter
 
@@ -69,7 +68,6 @@ class runAll:
         self.logger = get_logger(self.currDir + '/logs/live_utils.txt')
         self.coins = [key for key, value in keywords.items()]
         self.historicList = historicList
-        self.proxies = proxies
         
     def initial_houskeeping(self, clean):
         '''
@@ -127,9 +125,8 @@ _, currRoot_dir = get_locations()
 logger = get_logger(currRoot_dir + '/logs/run_live.txt')
 
 liveKeywords, historicList = get_keywords()
-proxies = get_proxies()
 
-ra = runAll(liveKeywords, historicList, proxies=proxies)
+ra = runAll(liveKeywords, historicList)
 ra.initial_houskeeping(clean=False) #change when required
 
 t1 = threading.Thread(target=download_live, args=[liveKeywords, logger])
@@ -142,17 +139,7 @@ while True:
     try:
         time.sleep(3 * 60 * 60)
         liveKeywords, historicList = get_keywords()
-        proxies = get_proxies()
-
-        historicList = get_custom_keywords(liveKeywords, datetime.datetime.utcnow()-relativedelta(days=1), datetime.datetime.utcnow())
-
-        qh = query_historic_tweets(historicList)
-        qh.perform_search()
-
-        hp = historicProcessor(historicList, "paper")
-        hp.read_merge(delete=True)
-        hp.clean_data()
-
+       
         pp = profileProcessor(historicList)
         pp.clean_data()
 
