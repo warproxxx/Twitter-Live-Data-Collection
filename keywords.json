@@ -1,0 +1,20 @@
+{
+    "manual": {
+        "start_date": 
+            "2018-10-28", 
+        "keywords": 
+            ["2018Midterms", "2018MidtermElections ", "Election2018", "ElectionDay", "MAGA2018", "MAGA", "Trump2020", "AmericaFirst", "TheResistance", "resist", "VoteThemOut", "2018Senate", "VoteRed", "Voteblue", "WalkAwayFromDemocrats2018", "WalkAwayFromRepublicans2018", "VOTE", "GAEarlyVoting", "EarlyVoting", "plus1", "IVoted", "WinBlue", "WinRed", "BlueWave", "RedWave", "republican2018", "democrat2018", "Republican", "Democrat"]
+    }, 
+    "house": {
+        "start_date": 
+            "2018-10-28", 
+        "keywords": 
+        ["don young", "alyse s galvin", "katie hill", "steve knight", "katie porter", "mimi walters", "harley rouda", "dana rohrabacher", "michael waltz", "nancy soderberg", "mario diaz balart", "mary barzee flores", "karen c handel", "lucy mcbath", "cindy axne", "david young", "mike bost", "brendan kelly", "rodney davis", "betsy dirksen londrigan", "randy hultgren", "lauren underwood", "jared golden", "bruce poliquin", "william lacy clay jr ", "greg gianforte", "kathleen williams", "george holding", "linda coleman", "ted budd", "kathy manning", "don bacon", "kara eastman", "tom malinowski", "leonard lance", "dina titus", "joyce bentley", "susie lee", "danny tarkanian", "pete king", "liuba grechen shirley", "chris collins", "nate mcmurray", "troy balderson", "danny o connor", "scott perry", "george scott", "pete sessions", "colin allred", "scott taylor", "elaine luria", "jaime herrera beutler", "carolyn long"]
+    }, 
+    "senate": {
+        "start_date": 
+            "2018-10-28", 
+        "keywords": 
+            ["kyrsten sinema", "martha mcsally", "bill nelson", "rick scott", "joe donnelly", "mike braun", "tina smith", "karin housley", "claire mccaskill", "josh hawley", "cindy hyde smith", "mike espy", "chris mcdaniel", "jon tester", "matt rosendale", "kevin cramer", "heidi heitkamp", "robert menendez", "bob hugin", "dean heller", "jacky rosen", "marsha blackburn", "phil bredesen", "ted cruz", "beto o rourke", "joe manchin iii", "patrick morrisey"]
+    }
+}
