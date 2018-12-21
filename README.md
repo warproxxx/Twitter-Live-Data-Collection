@@ -14,7 +14,7 @@ Data will be stored in the following format:
 
 | username | created | location | has_location | is_verified | total_tweets | total_following | total_followers | total_likes | has_avatar | has_background | is_protected | profile_modified
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:  | :---: | :---: | :---: | :---: 
-| Username of the use who posted the tweet | The date the profile was created in on YYYY-MM-DD format | Profile Location | 1  if profile is verified 0 if it isn't  | Total number of tweets created by the user | Total accounts following | Total Followers | Total likes the user has received | 1 if account  has an avatar 0 if it dosen't  | 1 if account has an background 0 if it dosen't | 1 if account is protected 0 if it isn't | 1 if profile is  modified. 0 if it isn't
+| Username of the use who posted the tweet | The date the profile was created in on YYYY-MM-DD format | Profile Location | 1 if profile has a location 0 if it dosen't | 1  if profile is verified 0 if it isn't  | Total number of tweets created by the user | Total accounts following | Total Followers | Total likes the user has received | 1 if account  has an avatar 0 if it dosen't  | 1 if account has an background 0 if it dosen't | 1 if account is protected 0 if it isn't | 1 if profile is  modified. 0 if it isn't
 
 Live tweet data will be stored inside "data/tweet/category_name/live" while will be moved to live_storage folder later.
 Profile data will be stored in "data/profile"
