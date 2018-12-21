@@ -5,11 +5,13 @@ Uses the Twitter API to collect and store  profile and tweet data for the specif
 Data will be stored in the following format:
 
 **Tweet Data:**
+
 | ID | Tweet | Time | User | Likes | Replies | Retweets | in_response_to | response_type
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: 
 | The ID of the tweet | The tweet text. Contains retweeted and quoted information too if they exist | Unix timestamp of the tweet in UTC Time | Username of the use who posted the tweet | Total number of likes the tweet received. It will be zero  as  we are collecting live | Same as likes | Same as likes | ID of tweet in whose response the current tweet was made. None if it's a parent tweet | "tweet" or "retweet" or "quoted_retweet"
 
 **Profile Data:**
+
 | username | created | location | has_location | is_verified | total_tweets | total_following | total_followers | total_likes | has_avatar | has_background | is_protected | profile_modified
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:  | :---: | :---: | :---: | :---: 
 | Username of the use who posted the tweet | The date the profile was created in on YYYY-MM-DD format | Profile Location | 1  if profile is verified 0 if it isn't  | Total number of tweets created by the user | Total accounts following | Total Followers | Total likes the user has received | 1 if account  has an avatar 0 if it dosen't  | 1 if account has an background 0 if it dosen't | 1 if account is protected 0 if it isn't | 1 if profile is  modified. 0 if it isn't
